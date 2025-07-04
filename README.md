@@ -109,7 +109,7 @@
                 </div>
                 <div class="stat-item">
                     <i class="fas fa-dollar-sign"></i>
-                    <span>R$ 300.000</span>
+                    <span>R$ 320.000</span>
                 </div>
             </div>
             
@@ -135,7 +135,7 @@
                     <p class="overview-description" data-pt="Esta excepcional fazenda de 150 hectares está localizada em Bofete, São Paulo, oferecendo uma oportunidade única para investidores e produtores rurais. A propriedade conta com infraestrutura completa e localização estratégica." data-en="This exceptional 150-hectare farm is located in Bofete, São Paulo, offering a unique opportunity for investors and rural producers. The property features complete infrastructure and strategic location.">
                         Esta excepcional fazenda de 10.000 metros quadrados está localizada em Bofete, São Paulo, oferecendo uma oportunidade única para investidores e produtores rurais. A propriedade conta com infraestrutura completa e localização estratégica.
                     </p>
-                    
+                    <p> Obs: pode-se aumentar nos 10.000 metros quadrados, acrescê-los 5.000 metros quadrados, alterando o valor para R$390.000,00. Ou seja aumentando R$70.000.
                     <div class="overview-stats">
                         <div class="stat-card">
                             <i class="fas fa-ruler-combined"></i>
@@ -472,7 +472,7 @@
                         <metros></metros>
                         </li>
                         <li data-pt="Tipo: Mista" data-en="Type: Mixed">Tipo: Mista</li>
-                        <li>Preço: R$ 300.000</li>
+                        <li>Preço: R$ 320.000</li>
                         <li data-pt="Status: Disponível" data-en="Status: Available">Status: Disponível</li>
                     </ul>
                 </div>
