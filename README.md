@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.01">
     <title>Vende-se sítio Premium em Bofete</title>
          <link rel="stylesheet" href="anm.css">
          <link rel="stylesheet" href="frm.css">
