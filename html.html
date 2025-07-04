@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vende-se sítio Premium em Bofete</title>
+         <link rel="stylesheet" href="anm.css">
+         <link rel="stylesheet" href="frm.css">
+         <link rel="stylesheet" href="cow.css">             
+            <link rel="stylesheet" href="downup.js">
+<import href="sitio (1).sql"></import>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Fazenda excepcional de 150 hectares em Bofete, SP. Infraestrutura completa, localização privilegiada. Exceptional 150-hectare farm in Bofete, SP.">
+    <meta name="keywords" content="fazenda venda, Bofete, propriedade rural, agronegócio, farm for sale, rural property, agribusiness">
+    <meta name="author" content="Fazenda Bofete">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Fazenda Premium em Bofete - Venda">
+    <meta property="og:description" content="Fazenda excepcional de 150 hectares em Bofete, SP">
+    <meta property="og:image" content="/placeholder.svg?height=630&width=1200">
+    <meta property="og:url" content="https://fazenda-bofete.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Geographic Meta Tags -->
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="Bofete">
+    <meta name="geo.position" content="-23.1039;-48.2556">
+    <meta name="ICBM" content="-23.1039, -48.2556">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h4>FAZENDA DELUXE EM BOFETE</h4>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" data-pt="Início" data-en="Home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#farm" class="nav-link" data-pt="A Fazenda" data-en="The Farm">A Fazenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link" data-pt="Galeria" data-en="Gallery">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-pt="Contato" data-en="Contact">Contato</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="pt">PT</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <button class="cta-btn" data-pt="Agendar Visita" data-en="Schedule Visit">Agendar Visita</button>
+                </div>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="casaVI.jpeg" alt="Fazenda Bofete" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title" data-pt="Fazenda Premium em Bofete" data-en="Premium Farm in Bofete">
+                Fazenda Premium em Bofete
+            </h1>
+            <p class="hero-subtitle" data-pt="Oportunidade única de investimento em propriedade rural de 150 hectares" data-en="Unique investment opportunity in 150-hectare rural property">
+                Oportunidade única de investimento em propriedade rural de 10.000 metros quadrados.
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fas fa-ruler-combined"></i>
+                    <span data-pt="150 Hectares" data-en="150 Hectares">10.000 metros quadrados</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span data-pt="Bofete, São Paulo" data-en="Bofete, São Paulo">Bofete, São Paulo</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>R$ 300.000</span>
+                </div>
+            </div>
+            
+            <div class="hero-actions">
+                <button class="btn btn-primary" data-pt="Agendar Visita" data-en="Schedule Visit">Agendar Visita</button>
+                <button class="btn btn-secondary" data-pt="Ver Galeria" data-en="View Gallery">Ver Galeria</button>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Farm Overview Section -->
+    <section id="farm" class="farm-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <h2 class="section-title" data-pt="Sobre a Propriedade" data-en="About the Property">
+                        Sobre a Propriedade
+                    </h2>
+                    <p class="overview-description" data-pt="Esta excepcional fazenda de 150 hectares está localizada em Bofete, São Paulo, oferecendo uma oportunidade única para investidores e produtores rurais. A propriedade conta com infraestrutura completa e localização estratégica." data-en="This exceptional 150-hectare farm is located in Bofete, São Paulo, offering a unique opportunity for investors and rural producers. The property features complete infrastructure and strategic location.">
+                        Esta excepcional fazenda de 10.000 metros quadrados está localizada em Bofete, São Paulo, oferecendo uma oportunidade única para investidores e produtores rurais. A propriedade conta com infraestrutura completa e localização estratégica.
+                    </p>
+                    
+                    <div class="overview-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-ruler-combined"></i>
+                            <div class="stat-info">
+                                <h3 data-pt="Área Total" data-en="Total Area">Área Total</h3>
+                                <p class="stat-value" data-pt="150 Hectares" data-en="150 Hectares">10.000 metros quadrados</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="stat-info">
+                                <h3 data-pt="Localização" data-en="Location">Localização</h3>
+                                <p class="stat-value" data-pt="Bofete, São Paulo" data-en="Bofete, São Paulo">Bofete, São Paulo</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <i class="fas fa-seedling"></i>
+                            <div class="stat-info">
+                                <h3 data-pt="Tipo" data-en="Type">Tipo</h3>
+                                <p class="stat-value" data-pt="Mista (Agricultura e Pecuária)" data-en="Mixed (Agriculture and Livestock)">Chacará</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <i class="fas fa-tint"></i>
+                            <div class="stat-info">
+                                <h3 data-pt="Água" data-en="Water">Água</h3>
+                                <p class="stat-value" data-pt="Nascentes" data-en="Natural Springs">Encanada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image">
+                    <img src="casaII.jpeg" alt="Vista aérea da fazenda" class="farm-image">
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Características da Fazenda" data-en="Farm Features">
+                    Características da Fazenda
+                </h2>
+                <p class="section-subtitle" data-pt="Conheça os principais diferenciais que fazem desta propriedade um investimento excepcional" data-en="Discover the key differentials that make this property an exceptional investment">
+                    Conheça os principais diferenciais que fazem desta propriedade um investimento excepcional
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="feature-title" data-pt="Infraestrutura Completa" data-en="Complete Infrastructure">
+                        Infraestrutura Completa
+                    </h3>
+                    <p class="feature-description" data-pt="Casa sede, galpões, currais e sistema de irrigação" data-en="Main house, warehouses, corrals and irrigation system">
+                        Casa sede, galpões, currais e sistema de irrigação
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="feature-title" data-pt="Localização Privilegiada" data-en="Prime Location">
+                        Localização Privilegiada
+                    </h3>
+                    <p class="feature-description" data-pt="15km do centro de Bofete, acesso por estrada pavimentada" data-en="15km from Bofete center, paved road access">
+                        180km do centro de Bofete, acesso por estrada pavimentada
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="feature-title" data-pt="Solo Fértil" data-en="Fertile Soil">
+                        Solo Fértil
+                    </h3>
+                    <p class="feature-description" data-pt="Terra roxa de primeira qualidade para diversas culturas" data-en="Premium red soil suitable for various crops">
+                        Terra roxa de primeira qualidade para diversas culturas
+                    </p>
+                </div>
+               <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="feature-title" data-pt="Recursos Hídricos" data-en="Water Resources">
+                        Segurança.
+                    </h3>
+                    <p class="feature-description" data-pt="Nascentes próprias e açude para irrigação" data-en="Natural springs and pond for irrigation">
+                        Mais de 2 dormitórios, 2 banheiros, sala de estar e cozinha.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="feature-title" data-pt="Acesso Logístico" data-en="Logistic Access">
+                        Acesso Logístico
+                    </h3>
+                    <p class="feature-description" data-pt="Próximo a rodovias principais e centros de distribuição" data-en="Close to main highways and distribution centers">
+                        Próximo a rodovias principais e centros de distribuição
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title" data-pt="Energia Elétrica" data-en="Electrical Power">
+                        Energia Elétrica
+                    </h3>
+                    <p class="feature-description" data-pt="Rede elétrica trifásica e gerador de emergência" data-en="Three-phase electrical network and emergency generator">
+                        Rede elétrica trifásica e gerador de emergência
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Galeria de Fotos" data-en="Photo Gallery">
+                    Galeria de Fotos
+                </h2>
+                <p class="section-subtitle" data-pt="Conheça a beleza e potencial da propriedade" data-en="Discover the beauty and potential of the property">
+                    Conheça a beleza e potencial da propriedade
+                </p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="aerial">
+                    <img src="casaIV.jpeg" alt="Vista aérea da fazenda" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Vista Aérea</h3>
+                            <p>Visão completa da propriedade</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="buildings">
+                    <img src="casaV.jpeg" alt="Casa sede" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Casa Sede</h3>
+                            <p>Residência principal da fazenda</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="land">
+                    <img src="arvore.jpeg" alt="Pastagem" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Pastagem</h3>
+                            <p>Áreas de lazer ao ar livre</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="buildings">
+                    <img src="casaII.jpeg" alt="Galpão" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Galpão</h3>
+                            <p>Estrutura para equipamentos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="water">
+                    <img src="janela.jpeg" alt="Açude" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Estrutura Interna</h3>
+                            <p>Janela Rústica</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item video-item" data-category="arvore">
+                    <img src="arvoreII.jpeg" alt="Tour virtual" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-play video-icon"></i>
+                            <h3>Paisagem Bucólica</h3>
+                            <p>Conheça a fazenda em detalhes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Entre em Contato" data-en="Get in Touch">
+                    Entre em Contato
+                </h2>
+                <p class="section-subtitle" data-pt="Interessado na propriedade? Entre em contato conosco" data-en="Interested in the property? Contact us">
+                    Interessado na propriedade? Entre em contato conosco
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h3 data-pt="Envie uma Mensagem" data-en="Send a Message">Envie uma Mensagem</h3>
+                        
+                        <div class="form-group">
+                            <label for="name" data-pt="Nome" data-en="Name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-pt="E-mail" data-en="Email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-pt="Telefone" data-en="Phone">Telefone sem DDD</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-pt="Mensagem" data-en="Message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" data-pt="Enviar Mensagem" data-en="Send Message">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4 data-pt="Localização" data-en="Location">Localização</h4>
+                                <p>Bofete, São Paulo, Brasil</p>
+                            </div>
+                        </div>
+                        
+                        <div class="map-container">
+                            <div class="map-placeholder">
+                                <i class="fas fa-map"></i>
+                                <p data-pt="Mapa da Propriedade" data-en="Property Map">Mapa da Propriedade</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4 data-pt="Telefone" data-en="Phone">Telefone</h4>
+                                <p>+55 11 94761-3153</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>manoaleite@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h4 data-pt="Redes Sociais" data-en="Social Media">Redes Sociais</h4>
+                        <div class="social-buttons">
+                            </a>
+                            <a href="https://www.instagram.com/juliaalvesl/" class="social-btn instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Fazenda Bofete</h3>
+                    <p class="footer-description" data-pt="Propriedade rural excepcional em Bofete, São Paulo. Oportunidade única de investimento." data-en="Exceptional rural property in Bofete, São Paulo. Unique investment opportunity.">
+                        Propriedade rural excepcional em Bofete, São Paulo. Oportunidade única de investimento.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/juliaalvesl/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-pt="Navegação" data-en="Navigation">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="#gallery" data-pt="Galeria" data-en="Gallery">Galeria</a></li>
+                        <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-pt="Contato" data-en="Contact">Contato</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> +55 (11) 94761-3153</li>
+                        <li><i class="fas fa-envelope"></i> manoaleite@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Bofete, São Paulo</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-pt="Informações" data-en="Information">Informações</h4>
+                    <ul class="footer-info">
+                        <li data-pt="Área da casa: 150 hectares" data-en="Area da casa: 150 hectares">Área da casa: 10.000 metros quadrados<metros></metros>
+                        <metros></metros>
+                        </li>
+                        <li data-pt="Tipo: Mista" data-en="Type: Mixed">Tipo: Mista</li>
+                        <li>Preço: R$ 300.000</li>
+                        <li data-pt="Status: Disponível" data-en="Status: Available">Status: Disponível</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+             <br><br>   <p data-pt="© 2024 Vendendo Sítio. Todos os direitos reservados." data-en="© 2024 Fazenda Bofete. All rights reserved.">
+                    © 2024 Fazenda Bofete. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Gallery -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modalImage" src="/placeholder.svg" alt="">
+            <div class="modal-nav">
+                <button id="prevBtn" class="modal-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn" class="modal-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script></script>
+</body>
+</html>
