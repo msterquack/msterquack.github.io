@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.01">
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <title>Vende-se sítio Premium em Bofete</title>
          <link rel="stylesheet" href="anm.css">
          <link rel="stylesheet" href="frm.css">
@@ -14,30 +15,24 @@
     <meta name="keywords" content="fazenda venda, Bofete, propriedade rural, agronegócio, farm for sale, rural property, agribusiness">
     <meta name="author" content="Fazenda Bofete">
     <meta name="robots" content="index, follow">
-    
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Fazenda Premium em Bofete - Venda">
     <meta property="og:description" content="Fazenda excepcional de 150 hectares em Bofete, SP">
     <meta property="og:image" content="/placeholder.svg?height=630&width=1200">
     <meta property="og:url" content="https://fazenda-bofete.com">
     <meta property="og:type" content="website">
-    
     <!-- Geographic Meta Tags -->
     <meta name="geo.region" content="BR-SP">
     <meta name="geo.placename" content="Bofete">
     <meta name="geo.position" content="-23.1039;-48.2556">
-    <meta name="ICBM" content="-23.1039, -48.2556">
-    
+    <meta name="ICBM" content="-23.1039, -48.2556">  
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
-    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -49,8 +44,7 @@
             <div class="nav-container">
                 <div class="nav-logo">
                     <h4>FAZENDA DELUXE EM BOFETE</h4>
-                </div>
-                
+                </div>   
                 <ul class="nav-menu">
                     <li class="nav-item">
                         <a href="#home" class="nav-link" data-pt="Início" data-en="Home">Início</a>
@@ -65,15 +59,13 @@
                         <a href="#contact" class="nav-link" data-pt="Contato" data-en="Contact">Contato</a>
                     </li>
                 </ul>
-                
                 <div class="nav-actions">
                     <div class="language-switcher">
                         <button class="lang-btn active" data-lang="pt">PT</button>
                         <button class="lang-btn" data-lang="en">EN</button>
                     </div>
                     <button class="cta-btn" data-pt="Agendar Visita" data-en="Schedule Visit">Agendar Visita</button>
-                </div>
-                
+                </div>                
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -82,22 +74,19 @@
             </div>
         </nav>
     </header>
-
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background">
             <img src="casaVI.jpeg" alt="Fazenda Bofete" class="hero-image">
             <div class="hero-overlay"></div>
         </div>
-        
-        <div class="hero-content">
+            <div class="hero-content">
             <h1 class="hero-title" data-pt="Fazenda Premium em Bofete" data-en="Premium Farm in Bofete">
                 Fazenda Premium em Bofete
             </h1>
             <p class="hero-subtitle" data-pt="Oportunidade única de investimento em propriedade rural de 150 hectares" data-en="Unique investment opportunity in 150-hectare rural property">
                 Oportunidade única de investimento em propriedade rural de 10.000 metros quadrados.
-            </p>
-            
+            </p>     
             <div class="hero-stats">
                 <div class="stat-item">
                     <i class="fas fa-ruler-combined"></i>
@@ -111,19 +100,16 @@
                     <i class="fas fa-dollar-sign"></i>
                     <span>R$ 320.000</span>
                 </div>
-            </div>
-            
+            </div>     
             <div class="hero-actions">
                 <button class="btn btn-primary" data-pt="Agendar Visita" data-en="Schedule Visit">Agendar Visita</button>
                 <button class="btn btn-secondary" data-pt="Ver Galeria" data-en="View Gallery">Ver Galeria</button>
             </div>
-        </div>
-        
+        </div>        
         <div class="scroll-indicator">
             <div class="scroll-arrow"></div>
         </div>
     </section>
-
     <!-- Farm Overview Section -->
     <section id="farm" class="farm-overview">
         <div class="container">
@@ -143,8 +129,7 @@
                                 <h3 data-pt="Área Total" data-en="Total Area">Área Total</h3>
                                 <p class="stat-value" data-pt="150 Hectares" data-en="150 Hectares">10.000 metros quadrados</p>
                             </div>
-                        </div>
-                        
+                        </div>                     
                         <div class="stat-card">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="stat-info">
@@ -275,7 +260,6 @@
                     Conheça a beleza e potencial da propriedade
                 </p>
             </div>
-            
             <div class="gallery-grid">
                 <div class="gallery-item" data-category="aerial">
                     <img src="casaIV.jpeg" alt="Vista aérea da fazenda" class="gallery-image">
@@ -397,6 +381,159 @@
                             <div class="map-placeholder">
                                 <i class="fas fa-map"></i>
                                 <p data-pt="Mapa da Propriedade" data-en="Property Map">Mapa da Propriedade</p>
+																 <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <h1 class="logo">
+                    <span class="location-icon" aria-hidden="true">📍</span>
+                    GeoTracker
+                </h1>
+                <button 
+                    id="refreshLocation" 
+                    class="refresh-btn"
+                    aria-label="Refresh current location"
+                    title="Get current location"
+                >
+                    <span class="refresh-icon" aria-hidden="true">🔄</span>
+                    Locate Me
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="container">
+                <h2 id="hero-title" class="hero-title">Discover Your Location</h2>
+                <p class="hero-description">
+                    Get your precise location and explore the interactive map with real-time positioning.
+                </p>
+            </div>
+        </section>
+
+        <section class="map-section" aria-labelledby="map-title">
+            <div class="container">
+                <div class="map-header">
+                    <h3 id="map-title" class="section-title">Interactive Location Map</h3>
+                    <div class="status-container">
+                        <div 
+                            id="statusMessage" 
+                            class="status-message"
+                            role="status"
+                            aria-live="polite"
+                            aria-atomic="true"
+                        >
+                            Click "Locate Me" to find your position
+                        </div>
+                        <div 
+                            id="loadingSpinner" 
+                            class="loading-spinner hidden"
+                            role="status"
+                            aria-label="Loading location data"
+                        >
+                            <div class="spinner"></div>
+                            <span>Getting your location...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <div 
+                        id="map" 
+                        class="map"
+                        role="application"
+                        aria-label="Interactive map showing your location"
+                        tabindex="0"
+                    ></div>
+                    
+                    <div class="map-controls" role="group" aria-label="Map controls">
+                        <button 
+                            id="zoomIn" 
+                            class="control-btn"
+                            aria-label="Zoom in on map"
+                            title="Zoom In"
+                        >
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <button 
+                            id="zoomOut" 
+                            class="control-btn"
+                            aria-label="Zoom out on map"
+                            title="Zoom Out"
+                        >
+                            <span aria-hidden="true">−</span>
+                        </button>
+                        <button 
+                            id="centerMap" 
+                            class="control-btn"
+                            aria-label="Center map on your location"
+                            title="Center on Location"
+                        >
+                            <span aria-hidden="true">🎯</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="location-info" id="locationInfo" aria-labelledby="location-title">
+                    <h4 id="location-title" class="info-title">Location Details</h4>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <label class="info-label">Latitude:</label>
+                            <span id="latitude" class="info-value">--</span>
+                        </div>
+                        <div class="info-item">
+                            <label class="info-label">Longitude:</label>
+                            <span id="longitude" class="info-value">--</span>
+                        </div>
+                        <div class="info-item">
+                            <label class="info-label">Accuracy:</label>
+                            <span id="accuracy" class="info-value">--</span>
+                        </div>
+                        <div class="info-item">
+                            <label class="info-label">Timestamp:</label>
+                            <span id="timestamp" class="info-value">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" aria-labelledby="features-title">
+            <div class="container">
+                <h3 id="features-title" class="section-title">Features</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🌍</div>
+                        <h4 class="feature-title">Real-time Location</h4>
+                        <p class="feature-description">
+                            Get your precise GPS coordinates with high accuracy positioning.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🗺️</div>
+                        <h4 class="feature-title">Interactive Map</h4>
+                        <p class="feature-description">
+                            Explore with zoom, pan, and marker functionality for better navigation.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">📱</div>
+                        <h4 class="feature-title">Responsive Design</h4>
+                        <p class="feature-description">
+                            Works seamlessly across all devices and screen sizes.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">♿</div>
+                        <h4 class="feature-title">Accessible</h4>
+                        <p class="feature-description">
+                            Built with accessibility in mind for all users.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
                             </div>
                         </div>
                     </div>
