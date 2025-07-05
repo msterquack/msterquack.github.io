@@ -1203,3 +1203,97 @@ body {
         padding: 1.5rem;
     }
 }
+.ipod-geolocator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.ipod-frame {
+  background: #fff;
+  border-radius: 34px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18), 0 1.5px 6px rgba(0,0,0,0.08);
+  max-width: 340px;
+  width: 100%;
+  overflow: hidden;
+  border: 2.5px solid #eee;
+  font-family: 'Inter', sans-serif;
+}
+
+.ipod-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 22px 8px 18px;
+  background: linear-gradient(90deg, #f8fafc 70%, #e6e8ea 100%);
+  border-bottom: 1.5px solid #e0e0e0;
+}
+
+.ipod-dot {
+  width: 11px;
+  height: 11px;
+  background: #34c759;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.ipod-location-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.ipod-battery {
+  width: 22px;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  position: relative;
+}
+.ipod-battery:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: -3px;
+  width: 3px;
+  height: 6px;
+  background: #bbb;
+  border-radius: 1px;
+}
+
+.ipod-map-display {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.4/1;
+  background: #d4e1ef;
+  border-bottom: 1.5px solid #e0e0e0;
+}
+.ipod-map-display iframe {
+  width: 100%;
+  height: 190px;
+  border: none;
+  border-radius: 0 0 22px 22px;
+  filter: grayscale(0.1) contrast(1.07);
+}
+.ipod-location-pin {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  background: url('https://cdn-icons-png.flaticon.com/512/684/684908.png') no-repeat center/contain;
+  pointer-events: none;
+}
+
+.ipod-footer {
+  background: #f8fafc;
+  font-size: 0.93rem;
+  text-align: center;
+  padding: 9px 0 10px 0;
+  color: #555;
+  border-radius: 0 0 34px 34px;
+}
